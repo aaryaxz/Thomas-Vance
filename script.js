@@ -7,9 +7,11 @@ function chacha(time) {
 }
 requestAnimationFrame(chacha);
 
-// document.addEventListener("contextmenu", (e) => {
-//   e.preventDefault();
-// });
+//Prevent Right Click
+
+document.addEventListener("contextmenu", (e) => {
+  e.preventDefault();
+});
 
 // Create Images
 
@@ -31,6 +33,7 @@ function createImage(){
   
 }               
 createImage() 
+
 // Image Animation
 var images = document.querySelectorAll(".images");
 images.forEach(function (el) {
